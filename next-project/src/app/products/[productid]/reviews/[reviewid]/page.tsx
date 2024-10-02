@@ -10,11 +10,11 @@ export default function ReviewDetail({
 }: {
   params: { productid: string; reviewid: string };
 }) {
-const random =  getRandomInt(2);
+// const random =  getRandomInt(2);
 
-  if(random === 1) {
-    throw new Error("Something went wrong");
-  }
+//   if(random === 1) {
+//     throw new Error("Something went wrong");
+//   }
   if(parseInt(params.reviewid) > 1000) {
     notFound();
   }
